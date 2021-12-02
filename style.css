@@ -1,0 +1,112 @@
+/***************************************
+   Default Styles
+************************************** */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:  Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  background: #fff;
+}
+
+#container {
+  margin: 10px 2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+/* links */
+
+a {
+  color: #00c;
+}
+
+a.mailto {
+  background: url(images/email.png) no-repeat 100% 2px;
+  padding-right: 18px;
+}
+
+a.pdflink {
+  background: url(images/pdf.png) no-repeat 100% 0;
+  padding-right: 18px;
+}
+
+a.henrylink {
+  background-color: #fff;
+  padding: 2px;
+  border: 1px solid #000;
+}
+
+a.external {
+  background: #fff url(images/external.png) no-repeat 100% 2px;
+  padding-right: 16px;
+}
+
+/* nested boxes */
+.nested-boxes {
+  border: 2px solid;
+  display: flex;
+}
+
+.nested-boxes div {
+  margin: 3px;
+  padding: 3px;
+}
+
+.nested-boxes > div {
+  border: 2px dashed;
+  margin-top: 20px;
+}
+
+.nested-boxes > div > div {
+  border: 1px dotted;
+}
+
+/* utility classes */
+
+.blue {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.yellow {
+  background-color: gold;
+}
+
+.grey {
+  background: #ccc;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.list-clear {
+  list-style: none;
+  margin: 10px;
+}
+
+
+
