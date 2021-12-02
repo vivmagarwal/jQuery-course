@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jquery Course</title>
-</head>
-<body>
-  <h1>Welcome to jQuery</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jquery Course</title>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Lerning Realworld jQuery</h2>
 
+      <ul id="main-menu-1" class="main-menu foo-bar" foo="bar">
+        <li id="gp1">Grand-parent-1
+          <ul>
+            <li class="gp1__parent-1">
+              <a class="asyoulikeit" href="/asyoulikeit/">GP1 Parent-1</a>
+            </li>
+            <li class="gp1__parent-2">GP1 Parent-2</li>
+            <li class="gp1__parent-3">GP1 Parent-3</li>
+            <li class="gp1__parent-4">GP1 Parent-4</li>
+          </ul>
+        </li>
+        <li>Grand-parent-2
+          <ul>
+            <li>
+              <a class="a-pdf" href="hamlet.pdf">GP2 Parent-1</a>
+            </li>
+            <li>GP2 Parent-2</li>
+            <li>GP2 Parent-3</li>
+          </ul>
+        </li>
+        <li>Grand-parent-3
+          <ul>
+            <li>GP3 Parent-1 (<a href="mailto:henryiv@king.co.uk">email</a>)
+              <ul>
+                <li>GP3 P1 child-1</li>
+                <li>GP3 P1 child-2</li>
+              </ul>
+            </li>
+            <li>
+              <a href="http://www.shakespeare.co.uk/henryv.htm">GP3 Parent-2</a>
+            </li>
+            <li>GP3 Parent-3</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Nested Boxes</h2>
+      <div class="nested-boxes">outer
+        <div>middle</div>
+        <div>middle
+          <div>inner</div>
+          <div>inner</div>
+        </div>
+        <div>middle</div>
+        <div>middle</div>
+
+
+      </div>
+
+      <h2>Form example</h2>
+      <div id="contact_form">
+        <form name="contact" action="">
+          <fieldset>
+            <div class="input-box">
+              <label for="name" id="name_label">Name</label>
+              <input type="text" name="name" id="name" minlength="3" placeholder="vivek" class="text-input" required/>
+            </div>
+
+            <div class="input-box">
+              <label for="email" id="email_label">Email</label>
+              <input type="email" name="email" id="email" placeholder="test@mail.com" class="text-input"/>
+            </div>
+
+            <div class="input-box">
+              <label for="phone" id="phone_label">Phone</label>
+              <input type="tel" name="phone" id="phone" class="text-input" placeholder="123-123-9876"/>
+            </div>
+
+            <div class="input-box">
+              <label for="phone" id="phone_label">Vehicle(s):
+              </label><br>
+              <input type="checkbox" name="vehicle1" value="Bike">
+              <label for="vehicle1">
+                I have a bike</label><br>
+              <input type="checkbox" name="vehicle2" value="Car" disabled>
+              <label for="vehicle2">
+                I have a car</label><br>
+              <input type="checkbox" name="vehicle3" value="Boat" checked>
+              <label for="vehicle3">
+                I have a boat</label><br><br>
+            </div>
+
+            <input type="submit" name="submit" class="button" id="submit_btn" value="Send"/>
+          </fieldset>
+        </form>
+      </div>
+
+
+    </div>
+  </body>
 
   <script src="vendor/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+  <script src="02.js"></script>
+</html></body></html>
